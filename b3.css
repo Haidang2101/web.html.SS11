@@ -24,8 +24,9 @@
     font-size: 30px;
     flex: 1;
     color: white;
-    opacity: 0.5;
-    visibility: hidden;
+    opacity: 0.1;
+    /* Ẩn menu ban đầu */
+    display: none;
 }
 
 .header .button {
@@ -62,7 +63,7 @@
     border: none;
     border-radius: 5px;
     opacity: 0.5;
-    visibility: hidden;
+    display: none;
 }
 
 .container {
@@ -124,13 +125,12 @@
 }
 
 @media screen and (max-width:1200px) {
-    .container2 {
-        flex-wrap: wrap;
-        display: none;
+    .header .button4 {
+        display: block;
     }
 
-    .header .button4 {
-        visibility: visible;
+    .header .menu {
+        display: none;
     }
 
     .container2_1 {
@@ -151,23 +151,23 @@
 
 @media screen and (max-width:768px) {
     .header .menu {
-        visibility: visible;
+        display: block;
     }
 
     .header .button {
-        visibility: hidden;
+        display: none;
     }
 
     .header .button2 {
-        visibility: hidden;
+        display: none;
     }
 
     .header .button3 {
-        visibility: hidden;
+        display: none;
     }
 
     .header .button4 {
-        visibility: hidden;
+        display: none;
     }
 
     .container2 {
