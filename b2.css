@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container {
+    margin: 10px;
+    background-color: #fbffff;
+}
+
+.container .header {
+    height: 50px;
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 5px;
+    border-radius: 10px;
+}
+
+.main {
+    display: flex;
+    gap: 5px;
+}
+
+
+.container .main .sidebar1 {
+    width: 50%;
+    height: 300px;
+    background-color: red;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container .main .sidebar2 {
+    width: 50%;
+    height: 300px;
+    background-color: yellowgreen;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.container .body {
+    height: 50px;
+    background-color: skyblue;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 5px;
+
+}
+
+.container .Footer .content1 {
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+    background-color: rgb(16, 16, 55);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.container .Footer .content2 {
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+    background-color: rgb(129, 43, 43);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 5px;
+
+
+}
+
+.container .Footer .content3 {
+    display: inline-block;
+    width: 33%;
+    height: 300px;
+    background-color: rgb(97, 97, 39);
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    border-radius: 10px;
+    margin-top: 5px;
+
+
+}
+
+
+
+@media screen and (max-width: 768px) {
+    .container .main {
+        flex-direction: column;
+    }
+
+    .container .main .sidebar1 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .container .main .sidebar2 {
+        width: 100%;
+        height: 100px;
+    }
+
+    .container .Footer .content1 {
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .container .Footer .content2 {
+        width: 100%;
+        height: 100px;
+
+    }
+
+    .container .Footer .content3 {
+        width: 100%;
+        height: 100px;
+
+    }
+
+
+}
